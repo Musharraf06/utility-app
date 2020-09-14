@@ -1,9 +1,12 @@
 import React from 'react';
+import '../stylesheets/style.css'
 
 const Home = () => {
     return (
         <>
-	   <h4>Home</h4>
+            <div className="main_container">
+                <h1>Play</h1>
+            </div>
         </>
     );
 }

@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../stylesheets/style.css'
+import Game from './Game';
 
 const Home = () => {
-    return (
-        <>
-            <div className="main_container">
-                <h1>Play</h1>
-            </div>
-        </>
-    );
+    const [start, setstart] = useState(false);
+    if (start === false) {
+        return (
+            <>
+                <div className="main_container">
+                    <button onClick={() => {
+                        setstart(true);
+                    }}>PLAY</button>
+                </div>
+            </>
+        );
+    } else {
+        return (
+            <Game />
+        )
+    }
+
 }
 
 export default Home;

@@ -1,0 +1,36 @@
+.container {
+  background-color: rgb(164, 243, 74);
+  transform: translate(0%, 17%);
+  padding: 10px 0px;
+  border-radius: 5px; 
+}
+
+.game-board {
+  margin: auto;
+  width: 30rem;
+  height: 28rem;
+  background-color: white;
+  position: relative;
+  right: 23rem;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.snake {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border: 0.9px solid rgb(184, 209, 184);
+  background-color: green !important;
+  position: relative;
+  z-index: 3;
+}
+
+.food {
+  width: 8px;
+  height: 8px;
+  border: 0.9px solid rgb(219, 68, 68);
+  background-color: red !important;
+  position: relative;
+  z-index: 1;
+}
